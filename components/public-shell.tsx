@@ -40,7 +40,7 @@ export function PublicShell({ children }: { children: React.ReactNode }) {
           <Link href="/login">Login / Register</Link>
         </Button>
         <Button asChild>
-          <Link href={"https://mandisetu-sellers.vercel.app/seller/dashboard"}>
+          <Link href="https://mandisetu-sellers.vercel.app/seller/dashboard">
             Sell With Us
           </Link>
         </Button>
