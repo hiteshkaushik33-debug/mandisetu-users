@@ -21,7 +21,7 @@ await Promise.all(
 try {
   await page.goto(base, { waitUntil: "networkidle" });
   await page
-    .getByRole("heading", { name: "Your direct factory-to-buyer marketplace" })
+    .getByRole("heading", { name: /ROXODEAL: YOUR DIRECT/ })
     .waitFor();
   await page.screenshot({
     path: "users/artifacts/home-desktop.png",
