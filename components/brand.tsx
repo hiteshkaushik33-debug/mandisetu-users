@@ -1,11 +1,9 @@
 import Link from "next/link";
 export function Brand() {
   return (
-    <Link href="/" className="brand">
-      <span className="mark">MS</span>
-      <span>
-        Mandi<span className="setu">Setu</span>
-      </span>
+    <Link href="/" className="brand rx-brand" aria-label="Roxodeal home">
+      <img src="/roxodeal-mark.svg" width="42" height="42" alt="" />
+      <span>Roxodeal</span>
     </Link>
   );
 }
