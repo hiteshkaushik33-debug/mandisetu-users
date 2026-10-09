@@ -31,9 +31,10 @@ export function RequirementForm({ compact = false }: { compact?: boolean }) {
     resolver: zodResolver(requirementSchema),
     defaultValues: {
       title: params.get("product") || "",
-      category: "",
+      category: params.get("category") || "",
+      quantity: params.get("quantity") || undefined,
       unit: "pieces",
-      city: state.profile.city,
+      city: params.get("city") || state.profile.city,
       description: "",
       date: "",
     },
