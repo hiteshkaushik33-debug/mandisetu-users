@@ -3,8 +3,8 @@ import "@/styles/globals.css";
 import { Providers } from "@/components/providers";
 export const metadata: Metadata = {
   title: {
-    default: "MandiSetu — Direct factory-to-buyer marketplace",
-    template: "%s | MandiSetu",
+    default: "Roxodeal — Direct factory-to-buyer marketplace",
+    template: "%s | Roxodeal",
   },
   description:
     "Find manufacturers, post free buying requirements, and connect through a trusted B2B lead marketplace.",
