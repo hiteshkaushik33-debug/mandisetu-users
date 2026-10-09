@@ -1,9 +1,8 @@
 import type { Role } from "./data";
-const origins: Record<Role, string> = {
-  buyer: process.env.NEXT_PUBLIC_USERS_URL || "http://localhost:3000",
-  seller: process.env.NEXT_PUBLIC_SELLER_URL || "http://localhost:3001",
-  admin: process.env.NEXT_PUBLIC_ADMIN_URL || "http://localhost:3002",
-};
+const sellerDashboardUrl =
+  "https://mandisetu-sellers.vercel.app/seller/dashboard";
+const adminOrigin = process.env.NEXT_PUBLIC_ADMIN_URL || "http://localhost:3002";
 export function appHref(role: Role, path: string): string {
-  return role === "buyer" ? path : origins[role].replace(/\/$/, "") + path;
+  if (role === "seller") return sellerDashboardUrl;
+  return role === "buyer" ? path : adminOrigin.replace(/\/$/, "") + path;
 }
