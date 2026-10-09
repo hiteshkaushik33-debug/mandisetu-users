@@ -43,7 +43,7 @@ export function Home() {
               Post requirement
             </Link>
             <Link href="/login">Login</Link>
-            <Link href={appHref("seller", "/seller/dashboard")}>
+            <Link href="https://mandisetu-sellers.vercel.app/seller/dashboard">
               Seller panel
             </Link>
           </div>
