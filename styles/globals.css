@@ -2,6 +2,7 @@
 @import "tailwindcss";
 @import "../public/template/bootstrap.min.css";
 @import "../public/template/style.css";
+@import "./roxodeal.css";
 @theme {
   --color-navy: #0a3d62;
   --color-amber: #e67e22;
