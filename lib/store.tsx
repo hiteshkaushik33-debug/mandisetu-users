@@ -46,11 +46,11 @@ const initial: State = {
   },
   activity: [
     "Your requirement RFQ-1042 has been matched with relevant suppliers.",
-    "Welcome to the MandiSetu preview.",
+    "Welcome to the Roxodeal preview.",
   ],
   cms: {
     about:
-      "MandiSetu connects buyers with manufacturers across India. Post a free requirement and find relevant suppliers for your business.",
+      "Roxodeal connects buyers with manufacturers across India. Post a free requirement and find relevant suppliers for your business.",
     faq: "Requirements are free for buyers. Up to five relevant suppliers can unlock each lead. Business deals are negotiated directly between buyers and sellers.",
   },
 };
@@ -78,7 +78,7 @@ export function MarketplaceProvider({
   useEffect(() => {
     try {
       const s = localStorage.getItem("mandisetu-preview-v1");
-      if (s) setState(JSON.parse(s));
+      if (s) setState(JSON.parse(s.replaceAll("MandiSetu", "Roxodeal")));
       const r = sessionStorage.getItem("mandisetu-preview-role");
       if (r === "buyer" || r === "seller" || r === "admin") setRoleState(r);
     } catch {
